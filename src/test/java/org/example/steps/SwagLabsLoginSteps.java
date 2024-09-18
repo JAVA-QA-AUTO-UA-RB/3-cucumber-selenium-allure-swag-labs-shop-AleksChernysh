@@ -9,28 +9,65 @@ public class SwagLabsLoginSteps {
     // Загальна структура проєкту залишається на ваш розсуд, проте бажано, щоб вона була чистою і логічною
 
     // Перед початком роботи видаліть степдефінішни, які не є релевантними вашому проєкту, щоб вони не плуталися під ногами
-    @Given("I am somewhere")
-    public void iAmSomewhere() {
+    
 
+    @Given("the user is on the log in page")
+    public void theUserIsOnTheLogInPage() {
     }
 
-    @When("I do something")
-    public void iDoSomething() {
-
+    @When("the user enters valid username and password")
+    public void theUserEntersValidUsernameAndPassword() {
     }
 
-    @Then("something good has happened")
-    public void somethingGoodHasHappened() {
-
+    @And("the user clicks the {string} button")
+    public void theUserClicksTheButton(String arg0) {
     }
 
-    @And("another expected thing has happened")
-    public void anotherExpectedThingHasHappened() {
-
+    @Then("the user should be redirected to the homepage")
+    public void theUserShouldBeRedirectedToTheHomepage() {
     }
 
-    @But("a thing we don{string}t happen")
-    public void aThingWeDonTExpectDidnTHappen() {
+    @Given("the user is on the login page")
+    public void theUserIsOnTheLoginPage() {
+    }
 
+    @When("the user enters a non-existent username and password")
+    public void theUserEntersANonExistentUsernameAndPassword() {
+    }
+
+    @Then("there should appear the text {string} on the page")
+    public void thereShouldAppearTheTextOnThePage(String arg0) {
+    }
+
+    @And("user is locked out")
+    public void userIsLockedOut() {
+    }
+
+    @Given("the user is logged")
+    public void theUserIsLogged() {
+    }
+
+    @And("the user is on the home page")
+    public void theUserIsOnTheHomePage() {
+    }
+
+    @Then("the system displays a message {string}")
+    public void theSystemDisplaysAMessage(String arg0) {
+    }
+
+    @Given("the user sees the confirmation message,")
+    public void theUserSeesTheConfirmationMessage() {
+    }
+
+    @When("the user selects the {string} button,")
+    public void theUserSelectsTheButton(String arg0) {
+    }
+
+    @Then("the system logs out the user, clears the session data, and redirects the user to the login page.")
+    public void theSystemLogsOutTheUserClearsTheSessionDataAndRedirectsTheUserToTheLoginPage() {
+    }
+
+    @Then("the system closes the confirmation message, and the user remains on the homepage.")
+    public void theSystemClosesTheConfirmationMessageAndTheUserRemainsOnTheHomepage() {
     }
 }
