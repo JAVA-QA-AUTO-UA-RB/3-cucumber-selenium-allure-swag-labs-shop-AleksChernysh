@@ -8,8 +8,6 @@ import org.openqa.selenium.WebElement;
 public class ProductsPage {
 
     private WebDriver driver;
-
-
     private By addToCartButton = By.id("add-to-cart-sauce-labs-bike-light");
     private By sortDropdown = By.cssSelector(".product_sort_container");
     private By cartButton = By.cssSelector(".shopping_cart_link");
